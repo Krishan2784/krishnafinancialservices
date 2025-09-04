@@ -4,14 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Krishna Financial Services | Life, Health & Mutual Fund Advisory</title>
-  <meta name="description" content="Trusted advisor for Life Insurance, Health Insurance (Mediclaim) and Mutual Funds since 2009. Talk to Krishan Sharma for expert guidance and claims support." />
+  <meta name="description" content="Trusted advisor for Life Insurance, Health Insurance (Mediclaim) and Mutual Funds since 2009." />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="Krishna Financial Services" />
   <meta property="og:description" content="Life, Health & Mutual Fund Advisory you can trust." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.krishnafinancialservice.com/" />
   <meta name="theme-color" content="#d4af37" />
-  <!-- Tailwind CSS via CDN -->
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -19,8 +20,8 @@
         extend: {
           colors: {
             brand: {
-              gold: '#d4af37', // metallic gold tone
-              dark: '#0f172a', // slate-900
+              gold: '#d4af37',
+              dark: '#0f172a',
             }
           },
           fontFamily: {
@@ -34,9 +35,14 @@
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <style>
     .gold-gradient { background-image: linear-gradient(135deg, #e9d8a6, #d4af37, #b88900); }
     .text-gradient { background-image: linear-gradient(90deg,#b88900,#d4af37,#e9d8a6); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -44,17 +50,19 @@
   </style>
 </head>
 <body class="font-body text-slate-800 bg-slate-50">
+
   <!-- Top Bar -->
   <div class="w-full bg-brand-dark text-white text-sm">
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center gap-4 justify-between">
       <div class="flex items-center gap-4">
-        <a href="tel:+919050820085" class="hover:underline">📞 +91 9050820085</a>
-        <a href="tel:+919802415909" class="hover:underline">📞 +91 9802415909</a>
+        <a href="tel:+919050820085" class="hover:underline">📞 +91 90508 20085</a>
+        <a href="tel:+919802415909" class="hover:underline">📞 +91 98024 15909</a>
       </div>
       <div class="flex items-center gap-3">
         <a class="hover:underline" href="#contact">Contact</a>
         <a class="hover:underline" href="#services">Services</a>
         <a class="hover:underline" href="#about">About</a>
+        <a class="hover:underline" href="gallery.html">Gallery</a> <!-- ✅ New Gallery tab -->
       </div>
     </div>
   </div>
@@ -70,6 +78,7 @@
         <a href="#services" class="hover:text-brand-gold">Services</a>
         <a href="#why-us" class="hover:text-brand-gold">Why Us</a>
         <a href="#testimonials" class="hover:text-brand-gold">Testimonials</a>
+        <a href="gallery.html" class="hover:text-brand-gold">Gallery</a> <!-- ✅ New -->
         <a href="#faq" class="hover:text-brand-gold">FAQ</a>
         <a href="#contact" class="px-4 py-2 rounded-full bg-brand-gold text-slate-900 font-semibold shadow-soft hover:opacity-90">Get Advice</a>
       </nav>
@@ -80,7 +89,7 @@
   <section id="home" class="relative overflow-hidden">
     <div class="gold-gradient absolute inset-0 opacity-10"></div>
     <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div>
+      <div data-aos="fade-right">
         <h1 class="font-display text-4xl md:text-5xl font-extrabold leading-tight">
           Insurance & Investments, <span class="text-gradient">Simplified</span>
         </h1>
@@ -91,202 +100,20 @@
         </div>
         <div class="mt-6 text-sm text-slate-500">IRDAI compliant | Paperwork assistance | Claim support</div>
       </div>
-      <div class="relative">
+      <div class="relative" data-aos="fade-left">
         <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-soft border border-slate-100 bg-white flex items-center justify-center">
-          <!-- Replace the placeholder image src with your banner later if desired -->
           <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop" alt="Financial planning" class="w-full h-full object-cover"/>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Trust Badges -->
-  <section class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div class="p-4 rounded-xl border border-slate-100 shadow-soft bg-white">
-        <div class="text-2xl font-extrabold">16+ yrs</div>
-        <div class="text-slate-500 text-sm">Experience</div>
-      </div>
-      <div class="p-4 rounded-xl border border-slate-100 shadow-soft bg-white">
-        <div class="text-2xl font-extrabold">1000+</div>
-        <div class="text-slate-500 text-sm">Families Guided</div>
-      </div>
-      <div class="p-4 rounded-xl border border-slate-100 shadow-soft bg-white">
-        <div class="text-2xl font-extrabold">24×7</div>
-        <div class="text-slate-500 text-sm">Claim Support</div>
-      </div>
-      <div class="p-4 rounded-xl border border-slate-100 shadow-soft bg-white">
-        <div class="text-2xl font-extrabold">PAN‑India</div>
-        <div class="text-slate-500 text-sm">Customer Base</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="font-display text-3xl font-extrabold mb-8">Our Core Services</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <h3 class="text-xl font-bold mb-2">Life Insurance</h3>
-          <p class="text-slate-600">Term plans, endowment & pension solutions tailored to protect your family and goals.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <h3 class="text-xl font-bold mb-2">Health Insurance (Mediclaim)</h3>
-          <p class="text-slate-600">Cashless mediclaim, family floater, top‑up and super top‑up plans with claim support.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <h3 class="text-xl font-bold mb-2">Mutual Funds & SIPs</h3>
-          <p class="text-slate-600">Goal‑based investing for education, retirement and wealth creation with periodic reviews.</p>
-        </div>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6 mt-6">
-        <div class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <h3 class="text-xl font-bold mb-2">Corporate & Group Policies</h3>
-          <p class="text-slate-600">Employee health insurance, group term life and more for MSMEs and enterprises.</p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <h3 class="text-xl font-bold mb-2">Become a Life/Health Advisor </h3>
-          <p class="text-slate-600">Part‑time/Full‑time insurance advisor opportunities with training and mentorship.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Us -->
-  <section id="why-us" class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="font-display text-3xl font-extrabold mb-4">Why Krishna Financial Services?</h2>
-        <ul class="space-y-3 text-slate-700">
-          <li>✔️ Personalized advice, not one‑size‑fits‑all</li>
-          <li>✔️ Clear comparisons across insurers & plans</li>
-          <li>✔️ End‑to‑end support—from purchase to claims</li>
-          <li>✔️ Transparent, ethical, long‑term relationship</li>
-        </ul>
-      </div>
-      <div class="p-6 rounded-2xl border border-slate-100 shadow-soft bg-slate-50">
-        <h3 class="text-xl font-bold mb-3">Get a quick callback</h3>
-        <form action="mailto:krishnafinancialservice@example.com" method="post" enctype="text/plain" class="grid gap-3">
-          <!-- TODO: Replace mailto above with your email address -->
-          <input required class="px-4 py-3 rounded-xl border" type="text" name="Name" placeholder="Your Name" />
-          <input required class="px-4 py-3 rounded-xl border" type="tel" name="Phone" placeholder="Phone Number" />
-          <select class="px-4 py-3 rounded-xl border" name="Service">
-            <option>Life Insurance</option>
-            <option>Health Insurance (Mediclaim)</option>
-            <option>Mutual Funds</option>
-            <option>Other</option>
-          </select>
-          <button class="px-4 py-3 rounded-xl bg-brand-gold font-semibold text-slate-900">Request Callback</button>
-          <p class="text-xs text-slate-500">By submitting, you agree to be contacted.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="font-display text-3xl font-extrabold mb-8">What Clients Say</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <figure class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <blockquote class="text-slate-700">“Super quick claim support for my parents’ hospitalization. Highly recommended.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Yash Kaushik </figcaption>
-        </figure>
-        <figure class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <blockquote class="text-slate-700">“Explained term insurance in simple language and helped me choose the right cover.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Vishnu Sharma (Dev American) </figcaption>
-        </figure>
-        <figure class="p-6 rounded-2xl bg-white border border-slate-100 shadow-soft">
-          <blockquote class="text-slate-700">“My SIPs are aligned to my goals now. Great periodic reviews.”</blockquote>
-          <figcaption class="mt-3 text-sm text-slate-500">— Pinky Sharma </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-16">
-      <h2 class="font-display text-3xl font-extrabold mb-8">FAQs</h2>
-      <details class="group mb-3 border border-slate-200 rounded-xl p-4 bg-slate-50">
-        <summary class="cursor-pointer font-semibold">Do you charge for consultation?</summary>
-        <div class="mt-2 text-slate-700">No. Advice is complimentary. We’re compensated by providers, transparently.</div>
-      </details>
-      <details class="group mb-3 border border-slate-200 rounded-xl p-4 bg-slate-50">
-        <summary class="cursor-pointer font-semibold">Can you help with claims?</summary>
-        <div class="mt-2 text-slate-700">Yes—documentation, insurer follow‑ups and cashless coordination.</div>
-      </details>
-      <details class="group mb-3 border border-slate-200 rounded-xl p-4 bg-slate-50">
-        <summary class="cursor-pointer font-semibold">Do you offer corporate/group policies?</summary>
-        <div class="mt-2 text-slate-700">Yes, for MSMEs and enterprises. Contact us with your headcount for a quote.</div>
-      </details>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="font-display text-3xl font-extrabold">Contact</h2>
-        <p class="mt-2 text-slate-300">Call or WhatsApp us for quick assistance.</p>
-        <div class="mt-6 space-y-3">
-          <a href="tel:+919050820085" class="block">📞 +91 9050820085</a>
-          <a href="tel:+919802415909" class="block">📞 +91 9802415909</a>
-          <a href="https://wa.me/919050820085" class="block underline">💬 WhatsApp: +91 9050820085</a>
-          <a href="mailto:info@krishnafinancialservice.com" class="block underline">✉️ Krishansharma@krishnafinancialservice.com</a>
-        </div>
-        <div class="mt-6 text-slate-300">
-          <!-- TODO: Replace with your real office address -->
-          <div class="font-semibold">Office Address</div>
-          <p id="office-address">Krishna Financial Services, Near D. K. food & Suppliments, Dev Nagar, Bus Stand, Palwal, Haryana, Pin - 121102</p>
-        </div>
-      </div>
-      <div class="p-6 rounded-2xl bg-white/5 border border-white/10">
-        <h3 class="text-xl font-bold mb-3">Request a Quote</h3>
-        <form action="mailto:info@krishnafinancialservice.com" method="post" enctype="text/plain" class="grid gap-3">
-          <input class="px-4 py-3 rounded-xl text-slate-900" type="text" name="Name" placeholder="Your Name" required />
-          <input class="px-4 py-3 rounded-xl text-slate-900" type="tel" name="Phone" placeholder="Phone Number" required />
-          <input class="px-4 py-3 rounded-xl text-slate-900" type="email" name="Email" placeholder="Email (optional)" />
-          <textarea class="px-4 py-3 rounded-xl text-slate-900" name="Message" rows="3" placeholder="Tell us what you need"></textarea>
-          <button class="px-4 py-3 rounded-xl bg-brand-gold text-slate-900 font-semibold">Send</button>
-          <p class="text-xs text-slate-400">You can also WhatsApp us for instant response.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-black text-slate-300">
-    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-      <div>&copy; <span id="year"></span> Krishna Financial Services. All rights reserved.</div>
-      <div class="text-sm">Built with ❤️ — Advisory since 2009.</div>
-    </div>
-  </footer>
-
-  <!-- Schema.org (update address & geo when available) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    "name": "Krishna Financial Services",
-    "url": "https://www.krishnafinancialservice.com/",
-    "telephone": ["+919050820085", "+919802415909"],
-    "areaServed": "IN",
-    "foundingDate": "2009",
-    "sameAs": [
-      "https://www.facebook.com/krishan2784",
-      "https://www.instagram.com/Krishna_Insurance_Services"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Replace with your office address",
-      "addressCountry": "IN"
-    }
-  }
-  </script>
-
+  <!-- ✅ Add AOS Init -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
   </script>
 </body>
 </html>
