@@ -4,15 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Krishna Financial Services | Life, Health & Mutual Fund Advisory</title>
-  <meta name="description" content="Trusted advisor for Life Insurance, Health Insurance (Mediclaim) and Mutual Funds since 2009." />
+  <meta name="description" content="Trusted advisor for Life Insurance, Health Insurance (Mediclaim) and Mutual Funds since 2009. Talk to Krishan Sharma for expert guidance and claims support." />
   <meta name="robots" content="index,follow" />
   <meta property="og:title" content="Krishna Financial Services" />
   <meta property="og:description" content="Life, Health & Mutual Fund Advisory you can trust." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.krishnafinancialservice.com/" />
   <meta name="theme-color" content="#d4af37" />
-
-  <!-- Tailwind CSS -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,8 +19,8 @@
         extend: {
           colors: {
             brand: {
-              gold: '#d4af37',
-              dark: '#0f172a',
+              gold: '#d4af37', // metallic gold tone
+              dark: '#0f172a', // slate-900
             }
           },
           fontFamily: {
@@ -35,14 +34,9 @@
       }
     }
   </script>
-
-  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
   <style>
     .gold-gradient { background-image: linear-gradient(135deg, #e9d8a6, #d4af37, #b88900); }
     .text-gradient { background-image: linear-gradient(90deg,#b88900,#d4af37,#e9d8a6); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -50,7 +44,6 @@
   </style>
 </head>
 <body class="font-body text-slate-800 bg-slate-50">
-
   <!-- Top Bar -->
   <div class="w-full bg-brand-dark text-white text-sm">
     <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center gap-4 justify-between">
@@ -62,7 +55,6 @@
         <a class="hover:underline" href="#contact">Contact</a>
         <a class="hover:underline" href="#services">Services</a>
         <a class="hover:underline" href="#about">About</a>
-        <a class="hover:underline" href="gallery.html">Gallery</a> <!-- ✅ New Gallery tab -->
       </div>
     </div>
   </div>
@@ -78,7 +70,6 @@
         <a href="#services" class="hover:text-brand-gold">Services</a>
         <a href="#why-us" class="hover:text-brand-gold">Why Us</a>
         <a href="#testimonials" class="hover:text-brand-gold">Testimonials</a>
-        <a href="gallery.html" class="hover:text-brand-gold">Gallery</a> <!-- ✅ New -->
         <a href="#faq" class="hover:text-brand-gold">FAQ</a>
         <a href="#contact" class="px-4 py-2 rounded-full bg-brand-gold text-slate-900 font-semibold shadow-soft hover:opacity-90">Get Advice</a>
       </nav>
@@ -89,7 +80,7 @@
   <section id="home" class="relative overflow-hidden">
     <div class="gold-gradient absolute inset-0 opacity-10"></div>
     <div class="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10 items-center">
-      <div data-aos="fade-right">
+      <div>
         <h1 class="font-display text-4xl md:text-5xl font-extrabold leading-tight">
           Insurance & Investments, <span class="text-gradient">Simplified</span>
         </h1>
@@ -100,8 +91,9 @@
         </div>
         <div class="mt-6 text-sm text-slate-500">IRDAI compliant | Paperwork assistance | Claim support</div>
       </div>
-      <div class="relative" data-aos="fade-left">
+      <div class="relative">
         <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-soft border border-slate-100 bg-white flex items-center justify-center">
+          <!-- Replace the placeholder image src with your banner later if desired -->
           <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1200&auto=format&fit=crop" alt="Financial planning" class="w-full h-full object-cover"/>
         </div>
       </div>
