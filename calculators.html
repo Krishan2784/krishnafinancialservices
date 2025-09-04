@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tools & Calculators - Krishna Financial Services</title>
   <link rel="stylesheet" href="calculators.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
@@ -12,41 +13,69 @@
     <p>Use these free calculators to plan your investments and loans.</p>
   </header>
 
-  <main>
-    <!-- SIP Calculator -->
-    <section class="calculator-card">
-      <h2>SIP Calculator</h2>
-      <label>Monthly Investment (₹)</label>
-      <input type="number" id="sipAmount" placeholder="e.g. 5000">
-      
-      <label>Expected Annual Return (%)</label>
-      <input type="number" id="sipRate" placeholder="e.g. 12">
-      
-      <label>Time Period (Years)</label>
-      <input type="number" id="sipYears" placeholder="e.g. 10">
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#sip">SIP Calculator</a></li>
+        <li><a href="#emi">EMI Calculator</a></li>
+        <li><a href="#child">Child Education</a></li>
+        <li><a href="#retirement">Retirement</a></li>
+        <li><a href="#marriage">Marriage</a></li>
+        <li><a href="#goal">Goal Planning</a></li>
+      </ul>
+    </nav>
 
-      <button onclick="calculateSIP()">Calculate</button>
-      <p id="sipResult"></p>
-    </section>
+    <main class="content">
+      <!-- SIP Calculator -->
+      <section class="calculator-card" id="sip">
+        <h2>SIP Calculator</h2>
+        <label>Monthly Investment (₹)</label>
+        <input type="number" id="sipAmount" placeholder="e.g. 5000">
+        <label>Expected Annual Return (%)</label>
+        <input type="number" id="sipRate" placeholder="e.g. 12">
+        <label>Time Period (Years)</label>
+        <input type="number" id="sipYears" placeholder="e.g. 10">
+        <button onclick="calculateSIP()">Calculate</button>
+        <p id="sipResult"></p>
+        <canvas id="sipChart"></canvas>
+      </section>
 
-    <!-- EMI Calculator -->
-    <section class="calculator-card">
-      <h2>EMI Calculator</h2>
-      <label>Loan Amount (₹)</label>
-      <input type="number" id="loanAmount" placeholder="e.g. 500000">
+      <!-- EMI Calculator -->
+      <section class="calculator-card" id="emi">
+        <h2>EMI Calculator</h2>
+        <label>Loan Amount (₹)</label>
+        <input type="number" id="loanAmount" placeholder="e.g. 500000">
+        <label>Interest Rate (%)</label>
+        <input type="number" id="loanRate" placeholder="e.g. 9">
+        <label>Tenure (Years)</label>
+        <input type="number" id="loanYears" placeholder="e.g. 15">
+        <button onclick="calculateEMI()">Calculate</button>
+        <p id="emiResult"></p>
+        <canvas id="emiChart"></canvas>
+      </section>
 
-      <label>Interest Rate (%)</label>
-      <input type="number" id="loanRate" placeholder="e.g. 9">
+      <!-- Placeholder for more calculators (Child, Retirement, Marriage, Goal) -->
+      <section class="calculator-card" id="child">
+        <h2>Child Education Calculator</h2>
+        <p>Coming soon...</p>
+      </section>
 
-      <label>Tenure (Years)</label>
-      <input type="number" id="loanYears" placeholder="e.g. 15">
+      <section class="calculator-card" id="retirement">
+        <h2>Retirement Calculator</h2>
+        <p>Coming soon...</p>
+      </section>
 
-      <button onclick="calculateEMI()">Calculate</button>
-      <p id="emiResult"></p>
-    </section>
+      <section class="calculator-card" id="marriage">
+        <h2>Marriage Calculator</h2>
+        <p>Coming soon...</p>
+      </section>
 
-    <!-- More calculators can be added in same style -->
-  </main>
+      <section class="calculator-card" id="goal">
+        <h2>Goal Planning Calculator</h2>
+        <p>Coming soon...</p>
+      </section>
+    </main>
+  </div>
 
   <script src="calculators.js"></script>
 </body>
